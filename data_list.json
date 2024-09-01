@@ -1,0 +1,122 @@
+[
+    {
+        "angle_measurement": 121.1,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 135.7,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 110.5,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 138.3,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 115.4,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 102.3,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 118.8,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 40.6,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 144.5,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 116.1,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 109.3,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 145.7,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 101.7,
+        "angle_labels": "MNO",
+        "Vertex_label": "N",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 146.0,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 101.2,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 82.2,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 112.9,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 32.0,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 125.4,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 127.8,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 130.2,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Obtuse",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 0.0,
+        "confidence": 100,
+        "error_notes": ""
+    },
+    {
+        "angle_measurement": 29.8,
+        "angle_labels": "",
+        "Vertex_label": "No label",
+        "angle_type": "Acute",
+        "angle_identified_with_arc": "True",
+        "arc_angle_measurement": 0,
+        "confidence": 100,
+        "error_notes": ""
+    }
+]
