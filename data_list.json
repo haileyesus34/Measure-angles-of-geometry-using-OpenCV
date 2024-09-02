@@ -1,18 +1,44 @@
 [
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 121.1,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 135.7,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": {
+            "M": [
+                33,
+                32,
+                19,
+                26
+            ],
+            "O": [
+                121,
+                184,
+                27,
+                40
+            ],
+            "N": [
+                361,
+                169,
+                34,
+                32
+            ]
+        },
         "angle_measurement": 110.5,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": {
+            "N": [
+                361,
+                169,
+                34,
+                32
+            ]
+        },
         "angle_type": "Obtuse",
         "angle_identified_with_arc": "True",
         "arc_angle_measurement": 138.3,
@@ -20,49 +46,75 @@
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 115.4,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 102.3,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 118.8,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 40.6,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 144.5,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 116.1,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 109.3,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 145.7,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": {
+            "O": [
+                31,
+                14,
+                24,
+                28
+            ],
+            "M": [
+                79,
+                151,
+                18,
+                23
+            ],
+            "N": [
+                246,
+                149,
+                13,
+                21
+            ]
+        },
         "angle_measurement": 101.7,
-        "angle_labels": "MNO",
-        "Vertex_label": "N",
+        "Vertex_label": {
+            "N": [
+                246,
+                149,
+                13,
+                21
+            ]
+        },
         "angle_type": "Obtuse",
         "angle_identified_with_arc": "True",
         "arc_angle_measurement": 146.0,
@@ -70,9 +122,29 @@
         "error_notes": ""
     },
     {
+        "angle_labels": {
+            "O": [
+                19,
+                54,
+                27,
+                24
+            ],
+            "M": [
+                137,
+                149,
+                32,
+                30
+            ]
+        },
         "angle_measurement": 101.2,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": {
+            "N": [
+                19,
+                54,
+                27,
+                24
+            ]
+        },
         "angle_type": "Obtuse",
         "angle_identified_with_arc": "True",
         "arc_angle_measurement": 82.2,
@@ -80,9 +152,35 @@
         "error_notes": ""
     },
     {
+        "angle_labels": {
+            "O": [
+                195,
+                159,
+                22,
+                21
+            ],
+            "M": [
+                19,
+                172,
+                20,
+                29
+            ],
+            "N": [
+                22,
+                177,
+                16,
+                19
+            ]
+        },
         "angle_measurement": 112.9,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": {
+            "N": [
+                22,
+                177,
+                16,
+                19
+            ]
+        },
         "angle_type": "Obtuse",
         "angle_identified_with_arc": "True",
         "arc_angle_measurement": 32.0,
@@ -90,31 +188,31 @@
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 125.4,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 127.8,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 130.2,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Obtuse",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 0.0,
         "confidence": 100,
         "error_notes": ""
     },
     {
+        "angle_labels": "labels not detected",
         "angle_measurement": 29.8,
-        "angle_labels": "",
-        "Vertex_label": "No label",
+        "Vertex_label": "vertex not detected",
         "angle_type": "Acute",
-        "angle_identified_with_arc": "True",
+        "angle_identified_with_arc": "False",
         "arc_angle_measurement": 0,
         "confidence": 100,
         "error_notes": ""

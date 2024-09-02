@@ -3,6 +3,7 @@ import numpy as np
 import math
 import cv2
 
+# calcualte the angle between two lines
 def calculate_angle(point1, point2, point3):
     """
     Calculate the angle between the line from point1 to point2 and from point2 to point3.
@@ -17,6 +18,7 @@ def calculate_angle(point1, point2, point3):
     angle = math.acos(dot_product / (magnitude1 * magnitude2))
     return np.degrees(angle)
 
+# calcualtes the intersection over unit 
 def iou(boxA, boxB):
     # Determine the (x, y)-coordinates of the intersection rectangle
     xA = max(boxA[0], boxB[0])
@@ -38,12 +40,15 @@ def iou(boxA, boxB):
     # Return the intersection over union value
     return iou
 
+# measure the distance between two points
 def measure_distance(pt1, pt2):
     return ((pt1[0] - pt2[0])**2+(pt1[1] - pt2[1])**2)**0.5
 
+# remove duplicate characters from a string
 def remove_items(test_list, item):
     return list(filter((item).__ne__, test_list))
 
+# collect unique characters 
 def unique(string):
    unique_ = ""
 
@@ -53,6 +58,7 @@ def unique(string):
    #print(unique_)
    return unique_.upper()
 
+# save unique characters from a list
 def moderator_text(text):
     moderated =  ''
     for char in text: 
@@ -64,13 +70,13 @@ def moderator_text(text):
          moderated = (moderated + char)
     return moderated
 
+# if OCR detects only two letters add the letter that is left
 def label_moderator(angle_label):
-   if len(angle_label)==0:
-      return ''
    str1 = "ONM"
    edits = ''
    reversed = str1[::-1]
-
+   
+   #search for the undetected label
    result1 = re.sub(re.escape(angle_label), "", str1)
    result2 = re.sub(re.escape(angle_label), "", reversed)
    
@@ -78,6 +84,8 @@ def label_moderator(angle_label):
      edits = result2
    else: 
      edits = result1
+   
+   # add the undetected label
    angle_label = angle_label + edits
    angle_label = unique(angle_label)
    
@@ -91,32 +99,23 @@ def label_moderator(angle_label):
    return angle_label
 
 
-def display_images_in_grid(images, rows, cols, window_name='Image Grid'):
-    # Check if the number of images matches the grid dimensions
-    assert len(images) == rows * cols, "Number of images must match rows * cols"
-
-    # Resize images to the smallest image dimensions in the list
-    min_height = min(image.shape[0] for image in images)
-    min_width = min(image.shape[1] for image in images)
-    resized_images = [cv2.resize(image, (min_width, min_height)) for image in images]
-
-    # Combine images into a grid
-    grid_images = []
-    for i in range(rows):
-        row_images = resized_images[i * cols:(i + 1) * cols]
-        grid_images.append(np.hstack(row_images))
-
-    # Combine rows to form the full grid
-    grid = np.vstack(grid_images)
-
-    return grid
+def display_images_grid(images, grid_size=(5, 5), window_name='Image Grid'):
+    # Ensure images are the same size
+    resized_images = [cv2.resize(img, (200, 200)) for img in images]  # Resize all images to 200x200
+    # Create the grid
+    rows = []
+    for i in range(0, len(resized_images), grid_size[1]):
+        row = np.hstack(resized_images[i:i + grid_size[1]])
+        rows.append(row)
+    grid_image = np.vstack(rows)
+    return grid_image
 
 def arc_angle_measurement(cropped_arc):
    angle = 0
    contours, _ = cv2.findContours(cropped_arc, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
    for contour in contours:
     # Fit a minimum enclosing circle to the contour
-      if len(contour) >= 10:  # Ensure there are enough points to fit an ellipse or circle
+      if len(contour) >= 5:  # Ensure there are enough points to fit an ellipse or circle
         ellipse = cv2.fitEllipse(contour)
         (center, axes, angle) = ellipse
 

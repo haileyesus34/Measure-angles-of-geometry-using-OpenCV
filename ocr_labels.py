@@ -53,23 +53,21 @@ def ocr_labels(image, angle):
           xmax = min(W, x+w+10)
           ymin = max(0, y-10)
           ymax = min(H, y+h+10)
+           
 
           roi = thresh[ymin:ymax, xmin:xmax]
           # use tesseract to detect the angle labels as a single character with a whitelist 'MNOmno'
           letter = pytesseract.image_to_string(roi, config='--psm 10 -c tessedit_char_whitelist=MNOmno')
           # if the letter is not none store the coordinates of that letter in a varialble
-          if letter:
-            coords.append(box)  
+          if letter: 
             letter = letter.strip()
             letter = moderator_text(letter)
-          
-                        
+            coords.append(box)
+            labels = angle_label + letter
+            labels = label_moderator(labels)        
           # Draw bounding box and letter on the image
-          cv2.rectangle(image, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
-          cv2.putText(image, letter, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 1)
-          labels = angle_label + letter
-          
-   labels = label_moderator(labels)
-   cv2.putText(image, f'<{labels:}: {int(angle)} degrees', (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6*(W/H)/2, (0, 0, 0), 1)
-
+          #cv2.rectangle(image, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
+          #cv2.putText(image, letter, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 1)
+   cv2.putText(image, f'<{labels:}: {int(angle)} degrees', (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7*(W/H)/2, (0, 0, 0), 2)
+   print(labels, coords)
    return image, labels, coords
