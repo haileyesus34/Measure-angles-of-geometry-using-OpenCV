@@ -1,1 +1,6 @@
-This project measure the angle of different obtuse and acute angle geometery![output](https://github.com/user-attachments/assets/858475b9-08c4-45ff-925b-d47b68c9d70b)
+# This project measure the angle of different obtuse and acute angle geometery!
+
+<img width="680" alt="save_images" src="https://github.com/user-attachments/assets/8f51dd56-950e-4977-ab8e-ef0082fa899f">
+
+
+
